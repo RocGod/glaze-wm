@@ -1,0 +1,1 @@
+Glaze-wm config File
