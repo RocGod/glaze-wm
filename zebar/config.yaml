@@ -100,7 +100,7 @@ window/bar:
     styles: |
       justify-self: center;
 
-
+      
   group/right:
     styles: |
       justify-self: end;

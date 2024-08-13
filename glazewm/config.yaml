@@ -72,6 +72,7 @@ window_behavior:
 workspaces:
   - name: '1'
     display_name: 'home'
+    keep_alive: true
   - name: '2'
     display_name: 'web'
   - name: '3'
