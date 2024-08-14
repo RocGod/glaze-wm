@@ -1,5 +1,4 @@
 # Yaml is white-space sensitive (use 2 spaces to indent).
-
 ###
 # Define a new window with an id of 'bar'. This window can then be opened
 # via the Zebar cli by running 'zebar open bar --args <ARGS...>'.
@@ -36,11 +35,12 @@ window/bar:
     align-items: center;
     height: 100%;
     color: rgb(255 255 255 / 90%);
-    font-family: CaskaydiaCove Nerd Font;
-    font-size: 12px;
-    padding: 4px 24px;
-    border-bottom: 1px solid rgb(255 255 255 / 5%);;
-    background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%));
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 13px;
+    padding: 4px 6px;
+    border-bottom: 1px solid rgb(255 255 255 / 5%);
+    background: #11111bcc;
+    foreground: #89b4fa;
 
     i {
       color: rgb(115 130 175 / 95%);
@@ -54,7 +54,8 @@ window/bar:
 
     template/logo:
       styles: |
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
       template: |
         <i class="nf nf-fa-windows"></i>
 
@@ -95,7 +96,7 @@ window/bar:
             {{ workspace.displayName ?? workspace.name }}
           </button>
         }
-
+  
   group/center:
     styles: |
       justify-self: center;
@@ -152,11 +153,6 @@ window/bar:
           <i class="nf nf-md-wifi_strength_off_outline"></i>
         }
 
-    template/host:
-      providers: ['host']
-      template: |
-        {{ host.friendlyOsVersion }}
-
     template/memory:
       providers: ['memory']
       template: |
@@ -201,7 +197,7 @@ window/bar:
         @else if (battery.chargePercent > 20) {<i class="nf nf-fa-battery_1"></i>}
         @else {<i class="nf nf-fa-battery_0"></i>}
 
-        {{ Math.round(battery.chargePercent) }}%
+        {{ Math.round(battery.chargePercent) }}% 
 
     template/weather:
       providers: ['weather']
