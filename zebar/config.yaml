@@ -100,6 +100,11 @@ window/bar:
   group/center:
     styles: |
       justify-self: center;
+      display: flex;
+    template/glazewm_other:
+      providers: ['glazewm']
+      template: |
+        {{glazewm.focusedContainer.title}}
 
       
   group/right:
