@@ -104,9 +104,8 @@ window/bar:
     template/glazewm_other:
       providers: ['glazewm']
       template: |
-        {{glazewm.focusedContainer.title}}
+        {{ glazewm.focusedContainer.title }}
 
-      
   group/right:
     styles: |
       justify-self: end;
@@ -127,7 +126,6 @@ window/bar:
           padding: 4px 6px;
           margin: 0;
         }
-
       template: |
         @for (bindingMode of glazewm.bindingModes) {
           <span class="binding-mode">
@@ -227,4 +225,4 @@ window/bar:
       providers: ['date']
       # Available date tokens: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
       template: |
-        {{ date.toFormat(date.now, 'EEE	d MMM T') }}
+        {{ date.toFormat(date.now, 'EEE d MMM T') }}

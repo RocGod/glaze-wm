@@ -100,11 +100,11 @@ window_rules:
         window_class: { regex: 'HwndWrapper*' }
   - commands: ["move --workspace 2"]
     match:
-      # Move browsers to workspace 1.
+      # Move browsers to workspace 2.
       - window_process: { regex: "thorium" }
   - commands: ["move --workspace 3"]
     match:
-      # Move browsers to workspace 1.
+      # Move games to workspace 3.
       - window_process: { regex: "HYP|Genshin Impact|League of Legends|Steam|Riot Client" }
 
 binding_modes:
@@ -225,7 +225,6 @@ keybindings:
     bindings: ["Alt+M"]
   - commands: ['shell-exec %LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe']
     bindings: ["Alt+Enter"]
-  
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']
@@ -272,7 +271,7 @@ keybindings:
   - commands: ['move --workspace 1', 'focus --workspace 1']
     bindings: ['alt+shift+1']
   - commands: ['move --workspace 2', 'focus --workspace 2']
-    bindings: ['alt+shift2']
+    bindings: ['alt+shift+2']
   - commands: ['move --workspace 3', 'focus --workspace 3']
     bindings: ['alt+shift+3']
   - commands: ['move --workspace 4', 'focus --workspace 4']
