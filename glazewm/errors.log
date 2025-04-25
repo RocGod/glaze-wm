@@ -1,0 +1,9 @@
+[2m2024-10-07T00:27:47.888460Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to start watcher process.
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+[2m2024-10-07T10:57:23.796453Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to start watcher process.
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+[2m2025-04-24T17:09:32.963384Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m gaps.outer_gap: invalid type: string "15px", expected struct RectDelta at line 180 column 14

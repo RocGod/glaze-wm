@@ -225,6 +225,8 @@ keybindings:
     bindings: ["Alt+M"]
   - commands: ['shell-exec %LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe']
     bindings: ["Alt+Enter"]
+  - commands: ['shell-exec D:\Netease\UU\uu_launcher.exe']
+    bindings: ["Alt+Y"]
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']
